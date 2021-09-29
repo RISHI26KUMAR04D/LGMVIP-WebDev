@@ -1,0 +1,262 @@
+:root {
+  font-size: 14px;
+}
+body {
+  background-color: #5f6769;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: white;
+}
+nav {
+  display: flex;
+  background-color: rgb(34, 34, 34);
+
+  align-items: center;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+nav > .title {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+nav > .logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+nav > .ank {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+nav > .ank:hover {
+  background-color: rgba(255, 255, 255, 0.068);
+}
+
+nav > .ank:active {
+  background-color: rgba(255, 255, 255, 0.185);
+}
+nav > .ank.push {
+  margin-left: auto;
+}
+nav > .ank > img {
+  height: 1.5rem;
+  margin: 0.5rem;
+}
+.content {
+  margin: 0;
+  margin-top: 5rem;
+}
+.pgrid {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 87rem) {
+  .pgrid {
+    grid-template-columns: auto;
+  }
+}
+.pgrid > div {
+  padding: 2rem;
+  margin: 3rem 0;
+}
+.pgrid > div > .imag {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 20%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  margin: auto;
+}
+.pgrid > div > .imag > img {
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pgrid > div > .title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+.pgrid > div > .text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.pgrid > div > .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pgrid > div > .btns > button {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+.pgrid > div > .btns > button:hover {
+  background-color: #ffa455;
+}
+.pgrid > div > .btns > button:active {
+  background-color: #ff8113;
+}
+.pgrid > div > .btns :first-child:hover {
+  background-color: #77f52e;
+}
+.pgrid > div > .btns :first-child:active {
+  background-color: #4fb116;
+}
+.products {
+  padding: 0 0 2rem 0;
+  padding-top: 5rem;
+  margin: 0;
+}
+.products > .title {
+  padding: 1rem;
+  font-size: 3rem;
+
+  text-align: center;
+}
+.main {
+  height: 50rem;
+  box-sizing: border-box;
+  background-color: black;
+  background-image: url(intro1.jpg);
+  background-position: 50% 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .main {
+    height: 30rem;
+    background-position: center;
+  }
+}
+.main > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 70%;
+  background-color: rgba(0, 0, 0, 0.658);
+  padding: 5rem;
+  animation: main-slide 1.5s ease;
+}
+.main > div .title {
+  font-size: 4rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.main > div .subtitle {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.about {
+  min-height: 50rem;
+  background-image: url(about-unsplash.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #313447;
+  position: relative;
+}
+.about > div {
+  position: absolute;
+  padding: 4rem;
+  background-color: rgba(46, 46, 46, 0.658);
+  width: 30rem;
+  border-radius: 2rem;
+  min-height: 40%;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+}
+.about > div > .title {
+  font-size: 3rem;
+}
+.about > div > .text {
+  font-size: 1.5rem;
+}
+
+@keyframes main-slide {
+  0% {
+    transform: translate(-150%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+footer {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 4rem;
+  background-color: #000000;
+  min-height: 20rem;
+}
+footer > .icons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+footer > .icons > div {
+  padding: 2rem;
+}
+footer > .icons > .text {
+  margin: 1rem;
+}
+footer > .icons svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+footer .title {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+footer .subtitle {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 2.5vmin;
+  }
+  .about > div {
+    width: 80%;
+    box-sizing: border-box;
+  }
+  .about {
+    background-size: cover;
+    background-position: center;
+  }
+}
