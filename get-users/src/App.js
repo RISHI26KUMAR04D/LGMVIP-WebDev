@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div className="app">
         <nav>
-          <div className="title">Let's More More Internship</div>
+          <div className="title">Let's Grow More Internship</div>
           <button onClick={() => this.getUsers()} className="btn push">
             Get Users
           </button>
